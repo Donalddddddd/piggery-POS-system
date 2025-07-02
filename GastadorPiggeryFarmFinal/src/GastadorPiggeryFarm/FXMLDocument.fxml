@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GastadorPiggeryFarm.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0" stylesheets="@LoginDesign.css">
+         <children>
+            <AnchorPane prefHeight="97.0" prefWidth="659.0" styleClass="left-form">
+               <children>
+                  <Label layoutX="148.0" layoutY="31.0" text="Gastador's Piggery Farm" textFill="#fffcfc">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="close" layoutX="602.0" layoutY="2.0" mnemonicParsing="false" onAction="#close" styleClass="close" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="2.0">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" size="1.2em" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-2.0" layoutY="96.0" prefHeight="343.0" prefWidth="661.0" styleClass="right-form">
+               <children>
+                  <FontAwesomeIcon fill="#881b62" glyphName="USER" layoutX="303.0" layoutY="104.0" size="6em" />
+                  <Label layoutX="265.0" layoutY="126.0" text="Welcome, Admin!">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="username" layoutX="224.0" layoutY="165.0" onAction="#loginAdmin" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="txtfield" stylesheets="@LoginDesign.css" />
+                  <PasswordField fx:id="password" layoutX="224.0" layoutY="205.0" onAction="#loginAdmin" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="txtfield" />
+                  <Button fx:id="loginbtn" layoutX="224.0" layoutY="251.0" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="40.0" prefWidth="220.0" styleClass="login-btn" text="Login" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
